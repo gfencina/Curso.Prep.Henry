@@ -1,0 +1,20 @@
+-for
+
+En la programación son muy utilizados los bucles, que son repetición de comandos o sentencias que realizan una tarea determinada y finalizan cuando se cumple una condición preestablecida.
+
+La forma del bucle es: 
+
+for (creación de variable; condición; incremento) {
+  //sentencias a repetir dentro del bucle
+}
+
+-operadores lógicos
+
+Los operadores lógicos sirven para comparar expresiones y devolver como resultado verdadero o falso (true or false).
+Son los siguientes:
+
+&& también llamado AND o Y. Al comparar dos expresiones, este operador es inclusivo de tal manera que ambas deben ser verdaderas, devolviendo true. Si alguna de las expresiones es falsa el resultado es false.
+
+|| también llamado OR o O. Al comparar dos expresiones, si una de ellas es verdadera el resultado será true. Si ambas expresiones son falsas, entonces el resultado será false.
+
+! también llamado NOT o NO. Este operador devolverá el valor lógico opuesto al valor de la expresión, por ejemplo: 'camisa' !== 'pollera' devuelve el valor de true.
