@@ -1,0 +1,66 @@
+Definiciones
+
+Variables
+
+Las variables son contenedores de datos, podemos almacenar en ellas distintos valores que pueden ir cambiando o no, según la necesidad de la programación.
+
+Hay tres formas de declarar una variable:
+ var "nombre de variable" = "valor a asignar" Ej: var saludo = 'Hola';
+ let "nombre de variable" = "valor a asignar" Ej: let mes = 12;
+ const "nombre de variable" = "valor a asignar" Ej: const pi = 3.1416;
+
+Strings
+Se le llama strings a una cadena de caracteres encerrada entre comillas que pueden ser simples o dobles (debe comenzar y terminar con la misma comilla).
+
+ Ejemplo: var minombre = "Gustavo";
+
+Funciones
+Las funciones son objetos a las que podemos llamar y ejecutar según necesitemos y que agrupan y ejecutan distintas lineas de código. Les podemos pasar distintas variables para su ejecución y una vez ejecutada se obtendrá el resultado objeto de la misma.
+
+La forma de la función es:
+ function "nombre de función" ("argumentos") {
+ "código de la función"
+}
+
+Ejemplo:
+ function saludar(nombre) {
+    console.log('Hola '+nombre);
+}
+
+Para ejecutar la función:
+ saludar('Raul');
+
+El resultado de la ejecución de la función será:
+ "Hola Raul".
+
+Si necesitamos que la función devuelva un valor se utiliza la palabra clave "return".
+Ejemplo:
+ function sumando(nro1, nro2){
+	return nro1 + nro2;
+}
+En este ejemplo, la función devuelve la suma de los dos argumentos pasados.
+
+Declaración "if"
+Sirve para ejecutar código según se cumpla o no ciertas condiciones.
+
+En el siguiente ejemplo comparamos dos variables y devolvemos la mayor:
+
+ function devuelvomayor(nro1, nro2){
+	if (nro1 > nro2) {
+	return nro1;
+	else {
+		return nro2;
+	}
+	}
+ }
+
+Valores booleanos
+Los valores booleanos son valores lógicos que pueden tener sólo dos formas, verdadero o falso.
+En el lenguaje se designan como "true" o "false".
+
+Cuando preguntamos por una condición, la misma devuelve un valor verdadero o falso.
+En el siguiente ejemplo comparamos dos números y según la comparación devuelve distintos resultados:
+
+ 5 < 9 es true (verdadero)
+ 5 === 9 es false (falso)
+ 5 > 9 es false (falso)
