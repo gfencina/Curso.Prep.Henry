@@ -1,0 +1,16 @@
+Arrays
+
+Se definen como arrays o matrices a variables que pueden almacenar un grupo de valores. Dichos valores pueden ser de cualquier tipo.
+
+Se define de la siguiente manera:
+var nuevaMatriz = [valor1, valor2, ...., valorn];
+
+Cada uno de los elementos que componen tiene un valor índice con el cual podemos acceder a él, siendo el primero 0.
+El array, al igual que el tipo string tiene incorporado el método .length que devuelve la cantidad de elementos que lo componen.
+
+Ejemplo: 
+var nuevaMatriz = ['Martín', 'Susana', 'Cristina', true, 5, 'Gustavo'];
+console.log(nuevaMatriz[2]);
+devuelve la tercera posición del array: 'Cristina'.
+
+Puede acceder al contenido de array en forma secuencial con las funciones for y while.
