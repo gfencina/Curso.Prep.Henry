@@ -1,0 +1,54 @@
+Objetos
+
+Los objetos son contenedores de datos que pueden tener mucha información de algo en particular. Se identifica con las llaves {} y cada propiedad, que está compuesta de un par clave/valor, va separado por , (coma simple).
+Los pares clave/valor o key: value corresponden a un identificador a la izquierda y su valor a la derecha.
+Los objetos pueden contener cualquier tipo de datos, incluídos otros objetos.
+
+Los métodos.
+Los objetos pueden tener entre sus propiedades funciones a las que se les llaman métodos. La propiedad tiene un nombre para la clave y el valor es una función.
+
+Bucles for...in
+Si queremos recorrer el contenido de un objeto podemos utilizar el bule for...in, que recorre secuencialmente al objeto y termina cuando llega a la última clave.
+
+Ejemplo:
+
+const alumno = {
+   nombre: 'Adrian',
+   edad: 24,
+   curso: 'química'
+   };
+
+for (let clave in alumno) {
+   console.log(clave);
+   console.log(alumno[clave];
+   }
+
+Notación de puntos y notación de corchetes.
+Para llamar o asignar los valores de las propiedades hay dos notaciones. 
+
+Con el siguiente objeto:
+const alumno = {
+   nombre: 'Adrian',
+   edad: 24,
+   curso: 'química'
+   };
+
+Notación de punto
+Se utiliza el nombre del objeto, el punto y la propiedad:
+ alumno.nombre // Adrian
+ alumno.edad // 24
+
+También podemos asignar un valor con esta notificación:
+ alumno.nombre = 'Carlos';
+
+Según la notación con corchetes:
+ alumno['nombre']; // Adrian
+ alumno['curso']; // química
+
+ alumno['edad'] = 29;
+
+Es más sencilla la notación con punto para su escritura, pero la notación con corchetes permite la utilización de variables:
+
+ var interes = 'Inglés';
+ alumno[interes]; // Inglés
+
