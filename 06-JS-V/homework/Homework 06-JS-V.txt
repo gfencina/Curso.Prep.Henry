@@ -1,0 +1,27 @@
+Definiciones.
+
+Bajo el concepto llamado como DRY o Don't Repeat Yourself Javascript tiene distintas formas para evitar la repetición de código, que incrementa el uso de memoria, y también evitar errores involuntarios.
+
+Los objetos pueden crearse literalmente, tantos como sea necesario; pero es más eficiente la creación de una "plantilla de objetos" estructura base de objetos similares a la que llamamos 'class' o constructor.
+Luego, al crear distintas instancias de objeto de dicha clase tienen esa exacta estructura.
+
+La creación de funciones, también demanda mucha memoria, por lo que es más eficiente crear un prototipo de dicha función para luego replicarla donde la necesitemos, o sea, se crea una vez, se la utiliza muchas.
+
+Allí entra la propiedad 'prototype'.
+Ejemplo:
+
+function Fiscal(nombre, localidad) { //declaramos la clase Fiscal
+   this.nombre = nombre;
+   this.localidad = localidad;
+};
+
+Fiscal.prototype.fiscaliza = function(){ //declaramos la propiedad
+   return 'Mi nombre es ' + this.nombre + ' y voy a fiscalizar en '+ this.localidad;
+};
+
+let erni = new Fiscal('Ernesto Viyafañe', 'La Tablada'); //declaro una instancia de Fiscal
+let fabi = new Fiscal('Fabiola Bermudez', 'Tigre'); //declaro otra instancia.
+
+console.log(erni.fiscaliza()); //ejecuto la función
+console.log(fabi.fiscaliza()); 
+
