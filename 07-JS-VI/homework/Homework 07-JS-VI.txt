@@ -1,0 +1,25 @@
+Callbacks
+Se le llama callback a la capacidad de pasar una función como argumento a otra función. Como convención se denomina 'cb' al argumento para la variable que se utilizará de callback.
+Ejemplo:
+
+var dolar = function(valor) {
+	if (valor === 1) {
+	return valor + ' dolar equivale a: ' + valor * 135 +' pesos';
+	} else if (valor > 1) {
+	return valor + ' dolares equivalen a: ' + valor * 135 +' pesos';
+	}
+}
+
+var euro = function(valor) {
+	if (valor === 1) {
+	return valor + ' euro equivale a: ' + valor * 165 +' pesos';
+	} else if (valor > 1) {
+	return valor + ' euros equivalen a: ' + valor * 165 +' pesos';
+	}
+}
+
+var cambio = function(valor, cb) {
+	return cb(valor);
+}
+
+cambio(1, dolar);
