@@ -1,0 +1,19 @@
+  		h1 {color: red;}
+  		h3 {color: indianred;}
+      .divClass {text-align: center;}
+  		img {width: 400px;}
+  		#thirdDiv {
+  			background-color: goldenrod;
+  			width: 500px;
+  			height: 600px;
+  			padding: 50px;
+  			border: 10px orangered solid;
+        text-align: center;
+        margin: auto;
+  		}
+  		#spanId {
+  			font-size: 18px;
+  			margin: 50px;
+  		}
+      body {background-image: url('https://cdnuploads.aa.com.tr/uploads/Contents/2018/09/24/thumbs_b_c_0970f11a6d81d650d9c47ea21f10a751.jpg?v=231325')}
+    .classDiv {margin: 0 auto;}      
